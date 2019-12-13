@@ -23,8 +23,9 @@ function randomGsmExtendedString(length) {
 
 function randomNonGsmString(length) {
   // All symbols known in the BMP above the euro symbol: http://codepoints.net/U+20AC
-  var min = 0x20ad;
-  var max = 0x297f;
+  // EDIT: changed symbol range to only emoticons. This was a hack to allow tests to pass after Twilio smart encoded chars were added to GSM charsets.
+  var min = 0x1f600;
+  var max = 0x1f64f;
   var result = "";
   for (var i = 0; i < length; i++) {
     result += String.fromCharCode(random.integer(min, max));
@@ -667,11 +668,9 @@ describe("Acceptance Tests", function() {
       assert.strictEqual(result.remainingInPart, 0);
     });
 
-    // This test disabled since Twilio's smart encoded characters were added to the GSM charset.
-    // To re-enable, randomNonGsmString() function needs to exclude smart encoded chars from return value.
-    // it('should return the expected content in the first part', function () {
-    //   assert.strictEqual(result.parts[0].content, expectedMessage);
-    // });
+    it("should return the expected content in the first part", function() {
+      assert.strictEqual(result.parts[0].content, expectedMessage);
+    });
 
     it("should return the expected length in the first part", function() {
       assert.strictEqual(result.parts[0].length, 160);
