@@ -1,4 +1,6 @@
-split-sms
+twilio-split-sms
+
+This package is a forked version of [codesleuth's original split-sms][original-repo-url]. This version was made to accommodate [Twilio's smart encoded charset][smart-encode-url].
 ============
 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Bower version][bower-image]][bower-url]
@@ -113,6 +115,9 @@ See [the demo site][demo-url] for an example.
 [GSM-03.38]: http://en.wikipedia.org/wiki/GSM_03.38#GSM_7_bit_default_alphabet_and_extension_table_of_3GPP_TS_23.038_.2F_GSM_03.38
 
 [rawgit-url]: http://rawgit.com/
+
+[original-repo-url]: https://github.com/Codesleuth/split-sms
+[smart-encode-url]: https://www.twilio.com/docs/sms/services/copilot-smart-encoding-char-list
 
 [demo-url]: http://www.codesleuth.co.uk/split-sms/
 
