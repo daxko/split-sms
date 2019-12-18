@@ -1,20 +1,17 @@
 {
-  "name": "split-sms",
-  "version": "0.1.7",
-  "description": "An SMS message splitter with support for both GSM and Unicode.",
-  "author": "David Wood <david.p.wood@gmail.com> (http://www.codesleuth.co.uk/)",
+  "name": "twilio-split-sms",
+  "version": "0.1.8",
+  "description": "Forked version of codesleuth's split-sms: An SMS message splitter with support for both GSM and Unicode.",
+  "author": "Ben Ward <benjamin.ward@daxko.com>",
   "scripts": {
     "test": "gulp test",
     "build": "gulp"
   },
   "main": "lib/index.js",
-  "homepage": "https://github.com/codesleuth/split-sms",
+  "homepage": "https://github.com/daxko/split-sms",
   "repository": {
     "type": "git",
-    "url": "https://github.com/codesleuth/split-sms.git"
-  },
-  "bugs": {
-    "url": "https://github.com/codesleuth/split-sms/issues"
+    "url": "https://github.com/daxko/split-sms"
   },
   "keywords": [
     "sms",
@@ -22,7 +19,8 @@
     "gsm",
     "split",
     "splitter",
-    "credits"
+    "credits",
+	"twilio"
   ],
   "devDependencies": {
     "browserify": "^10.2.6",
