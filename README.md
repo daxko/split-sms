@@ -1,10 +1,10 @@
 twilio-split-sms
 ============
-#####This package is a forked version of [codesleuth's original split-sms][original-repo-url]. This version was made to accommodate [Twilio's smart encoded charset][smart-encode-url].
+##### This package is a forked version of [codesleuth's original split-sms][original-repo-url]. This version was made to accommodate [Twilio's smart encoded charset][smart-encode-url].
 
 
 
-#Codesleuth's original documentation:
+# Codesleuth's original documentation:
 
 An SMS message splitter with support for both GSM and Unicode written in JavaScript.
 GSM support is limited to GSM 03.38 with the extension table (see the [Wikipedia article][GSM-03.38]); no support for natural language shift tables exists at this time.
